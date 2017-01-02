@@ -1,0 +1,932 @@
+/* 
+* @Author: anchen
+* @Date:   2016-07-14 09:50:59
+* @Last Modified by:   anchen
+* @Last Modified time: 2016-07-26 17:43:59
+*/
+
+ /*===================清楚默认样式=================*/
+ body{
+    margin:0px;
+    background:#f5f5f5;
+ }
+ form,h2,h3,p{
+    margin:0;
+ }
+ input{
+    margin:0;
+    padding:0;
+    outline:none;
+    background:none;
+    border:none;
+ }
+ img{
+  border:none;
+ vertical-align: top;
+ }
+ ul,ol{
+    padding:0;
+    margin:0;
+    list-style:none;
+ }
+ a{
+    text-decoration:none;
+ }
+
+ /*=====清浮动=ie6下只支持a标签的伪类，并且只有hover active link visited四个伪类====*/
+ .clearFix{
+     zoom:1;
+ }
+.clearFix:after{
+
+    content:"";
+    display: block;
+    clear:both;
+}
+
+/*===================第一块=================================*/
+
+
+.wrap{
+    height:71px;
+    background:url(../img/bg.png);
+    min-width: 982px;
+}
+.box{
+    width:982px;
+    margin:0 auto;
+	position:relative;
+	z-index:90;
+}
+.headleft{
+    float:left;
+    position:relative;
+}
+.logo{
+  float:left;
+    margin-top:23px;
+    margin-right: 16px;;
+}.hdm{
+    float:left;
+    position:relative;
+	height:71px;
+}
+.lianjie{
+    margin-left:-2px;
+}
+
+.lianjie span{
+     float:left;
+
+
+}
+.bgr{
+    font:14px/66px "宋体";
+    padding:5px 21px 0;
+    background:url(../img/bg.gif) no-repeat right -401px ; 
+    z-index: 1;
+}
+.bgl{
+    background:url(../img/bg.gif) no-repeat left -330px ; 
+    z-index: 1;
+}
+.teleft .bgl{
+  background:none;
+}
+.teright .bgr{
+  background:none;
+
+  padding-right: 40px;
+}
+
+
+
+
+.headleft a{
+    float:left;
+    color:#cccccc;
+    position:relative;/*==========+为了hover时候提升层级*/
+    z-index: 1;
+}
+.headleft .lulu:hover{
+    background:url(../img/bg.gif) left -80px;
+      z-index: 2;
+}
+.headleft .lulu:hover .bgr/*,.headleft .active .bgr*/{
+     background:url(../img/bg.gif) no-repeat right -255px ; 
+}
+.headleft .lulu:hover .bgl/*,.headleft .active .bgl*/{
+     background:url(../img/bg.gif) no-repeat left -161px; 
+}
+.headleft .active{
+  background:url(../img/bg.gif) repeat-x 0 -536px;
+  z-index: 2;
+}
+.headleft .active .bgr{ background:url(../img/bg.gif) no-repeat right -255px ; z-index: 2; }
+.headleft .active .bgl{ background:url(../img/bg.gif) no-repeat left -161px; z-index: 2;  }
+
+
+
+
+
+
+.hotbg{
+
+position:absolute;
+top:23px;
+left:349px;
+z-index: 3;
+}
+
+.headright{
+    float:right;
+    padding-top: 21px;
+}
+.headright .input{
+    float:left;
+    background:url(../img/input.gif) repeat-x 0 -32px;
+}
+.headright input{
+     width:170px;
+    height:31px;
+    float:left;
+    font:12px/30px "宋体";
+    color:#9b9b9b;
+
+}
+.headright .inputl{
+    float:left;
+    width:25px;
+    height:31px;
+    background:url(../img/input.gif) no-repeat;
+}
+.headright .inputr{
+    float:left;
+    width:12px;
+    height:31px;
+    background:url(../img/input.gif) no-repeat -13px -99px;
+}
+.headright .login{
+    float:left;
+    font:12px/31px "宋体";
+    padding:0 10px 0 15px;
+    color:#787878;
+    position:relative;
+}
+
+/*.sanjiao{
+    width:0;
+    height:0px;
+    border:7px solid #000;
+    border-bottom-color:#2a2a2a ;
+    border-left-color:#2a2a2a ;
+    border-right-color:#2a2a2a ;
+    position:absolute;
+    right:-10px;
+    top:10px;
+}*/
+.sanjiao{
+    width:12px;
+    height:7px;
+    /*position:absolute;*/
+ /*   right:-10px;
+    top:10px;*/
+    margin-top: 10px;
+    background:url(../img/down.png) no-repeat -272px -320px;
+
+}
+
+.jiao{
+  width:14px;
+  height:8px;
+  position:absolute;
+  top:63px;
+  _top:64px;
+  left:40px;
+  z-index: 3;
+  font-size:0;
+  overflow:hidden;
+  background:url(../img/down.png) no-repeat left -135px;
+  
+}
+
+
+
+/*=========第二块==========图片透明度有问题时候改一下格式==*/
+.box2{
+  position:relative;
+   height:34px;
+background:url(../img/input.gif) repeat-x 0 -64px;
+  min-width: 982px;
+}
+
+.box2 .nav{
+    /*position:absolute;*/
+    /*left:50%;*/
+    margin:0 auto;
+    /*top:0;*/
+    /*margin-left:-317px;*/
+     width:982px;
+     z-index: 1;
+}
+.box2 .nav .tuijian{
+  margin-left: 195px;
+}
+/*.box2 .nav .jiao{
+     position:absolute;
+     background:url(../img/down.png) no-repeat left -135px;
+     width:14px;
+     height:8px;
+     left:38px;
+     top:-8px;
+     z-index: 3;
+}*/
+.box2 .nav a{
+  margin-left: 20px;
+    color:#fff;
+    margin-top:7px;
+    font:12px/20px "宋体";
+    float:left;
+    margin-right: 36px;
+    /*height:20px;*/
+}
+.navr{
+  padding:0 13px;
+}
+.box2 span{float:left;}
+.box2 .nav a:hover
+{
+  background:#900403;
+  z-index: 1;
+}
+.box2 .nav a:hover .navl{
+  background:url(../img/input.gif) no-repeat left -132px;
+  z-index: 2;
+}
+.box2 .nav a:hover .navr{
+  background:url(../img/input.gif) no-repeat right -156px;
+  z-index: 2;
+}
+
+.box2 .nav .active{
+   background:#900403; z-index: 1;
+}
+.box2 .nav .active .navl{
+  background:url(../img/input.gif) no-repeat left -132px;
+  z-index: 2;
+}
+.box2 .nav .active .navr{
+  background:url(../img/input.gif) no-repeat right -156px;
+  z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=======================第三块=======================*/
+
+.box3{
+    background:#81a69e;
+    position:relative;
+    height:336px;  /*   =====图片附近一定要设置宽高=======*/
+    z-index: 1;
+}
+.pic{
+    width:984px;
+    margin:0 auto;
+    position:relative;
+}
+.pic .left{
+    float:left;
+ /*   width:730px;
+    height:336px;*/
+}
+
+.box3 .pic .right{
+   float:left;
+   width:254px;
+   height:336px;
+    position:relative;
+  /*  right:0;
+    top:0;*/
+}
+ .right a{
+  position: absolute;
+    /* padding-top: 56px; */
+    /* overflow: hidden; */
+    width: 215px;
+    height: 56px;
+    overflow: hidden;
+    text-indent: -1000px;
+    left: 18px;
+    bottom: 67px;
+    background:url(../img/down.png) no-repeat 0 -303px;
+
+}
+ .right a:hover{
+   background:url(../img/down.png) no-repeat 0 0;
+ }
+
+.box3 .pic .right .mask{
+    position:absolute;
+    bottom:40px;
+    left:14px;
+    font:12px   Arial,"宋体";
+    color:#8d8d8d;
+
+}
+
+.box3 .picleft{
+    position:absolute;
+    /*float:left;*/
+    width:37px;
+    height:63px;
+    background:url(../img/down.png) no-repeat -216px 0px ;
+    left:-80px;
+    top:137px;
+}
+.box3 .picright{
+    position:absolute;
+     width:37px;
+    height:63px;
+    background:url(../img/down.png) no-repeat -253px 0px ;
+    right:-80px;
+    top:137px;
+}
+
+.box3 .picleft:hover{
+    background-color:#000;
+    opacity:.5;
+    filter:alpha(opacity=50);
+}
+.box3 .picright:hover{
+    background-color:#000;
+    opacity:.5;
+     filter:alpha(opacity=50);
+}
+
+
+
+
+/*===============第四块===================*/
+.box4 .content{
+    width:982px;
+    margin:0 auto;
+    background:#fff;
+    /*border-left:1px solid #d5d5d5;*/
+    border-right:1px solid #d5d5d5;
+}
+.box4 .listl{
+    width:729px;
+    border:1px solid #d4d4d4;
+    float:left;
+    border-bottom:none;
+}
+.box4 .listl .listnav{
+    height:53px;
+    margin:0 20px;
+    border-bottom:2px solid #c10d0c;
+}
+.box4 .listl .listnav h2{
+float:left;
+font:19px "宋体";
+color:#333333;
+padding:25px 0 0 34px;
+background:url(../img/down.png) no-repeat -290px 0px;
+} 
+.box4 .listl .listnav nav{
+    float:left;
+}
+ .box4 .listl .listnav a{
+      float:left;
+      font:12px "宋体";
+      margin:28px 0 0;
+      padding:0 13px 0 16px;
+      color:#666666;
+     
+ } .box4 .listl .listnav .bg a{
+     background:url(../img/down.png) no-repeat -397px -79px ; 
+ }
+ .box4 .listl .listnav .bg a:hover,
+ .box4 .listl .listnav .more:hover{
+  text-decoration: underline;
+ }
+  .box4 .listl .listnav .bg .tea{
+    background:none;
+    margin-left:4px;
+  }
+.box4 .listl .listnav .more {
+    float:right;
+    padding-right: 27px;
+    background:url(../img/down.png) no-repeat 0px -63px;
+}
+.box4 .listl .fudong{
+    position:relative;
+}
+.box4 .listl .fudong img{
+ 
+  width:140px;
+  height:140px;
+}
+.box4 .listl .fudong .li,.box4 .listl .fudong span{
+    float:left;
+}
+.box4 .listl .fudong .li{
+       width:140px;
+       height:180px;
+    position:relative;
+    padding:20px 21px 31px;
+     }
+.box4 .listl .fudong .li .mask{
+    width:138px;
+    height:25px;
+    background:#000;
+    position:absolute;
+    filter: alpha(opacity=50);/*======在ie6、7、8中不支持opacity 解决：filter: alpha(opacity=50); opacity: .5;两个都写=========*/
+    opacity: .5;
+    top:133px;
+    left:22px;
+    border-top:1px solid #000;
+    border-bottom:1px solid #000;
+}
+.box4 .listl .fudong .li .text{
+    
+    position:absolute;
+    color:#cccccc;
+    padding-left: 29px;
+    top:137px;
+    left:20px;
+    background:url(../img/down.png) no-repeat -57px -61px;
+}
+.box4 .listl .fudong .li .bg{
+    width:22px;
+    height:22px;
+    display:inline-block;
+    position:absolute;
+    background:url(../img/down.png) no-repeat -341px -381px;
+    top:137px;
+    right:34px;
+}
+.box4 .listl .fudong .li .bg:hover{
+  background:url(../img/down.png) no-repeat -300px -381px;
+}
+ .box4 .listl .fudong2 .li{
+    float:left;
+    padding:28px 0 0  11px;
+    position:relative;
+ }
+  .box4 .listl .fudong .li a{
+    display:block;
+    color:#000;
+    font-size:14px;
+  }
+.ali{
+  padding-top: 10px;
+}
+.ali:hover{
+  text-decoration: underline;
+}
+ .box4 .listl .fudong2{
+    height:186px;
+    margin:1px;
+   background:#f5f5f5;
+
+ }
+ .box4 .listl .fdong2{
+    position:relative;
+    width:687px;
+    margin:20px 0 0 20px;
+    border:1px solid #d3d3d3;
+ }
+   .box4 .listl .fudong2 .li a{
+    display:block;
+    font:12px "宋体";
+    color:#000;
+    
+   }
+     .box4 .listl .fudong2 .li a:hover{
+      text-decoration: underline;
+     }
+   /*    .box4 .listl .fudong .li img{
+        position:absolute;
+       }*/
+  
+    .box4 .listl .fudong2 .li span{
+    color:#666666;
+    line-height:24px;
+    }
+     .box4 .listl .fudong2 .teli{
+        padding-left: 27px;
+     } 
+.box4 .listl .fdong2 .imgleft{
+    position:absolute;
+    width:8px;
+    height:14px;
+    background:url(../img/down.png) no-repeat -224px -63px;
+    left:9px;
+    top:72px;
+}
+.box4 .listl .fdong2 .imgleft:hover{
+   background:url(../img/down.png) no-repeat -241px -63px;
+}
+.box4 .listl .fdong2 .imgright{
+    position:absolute;
+     width:8px;
+    height:14px;
+    background:url(../img/down.png) no-repeat -224px -84px;
+    right:9px;
+    top:72px;
+}
+.box4 .listl .fdong2 .imgright:hover{
+   background:url(../img/down.png) no-repeat -242px -84px;
+}
+/*===============================================================鼠标已经去的时候才会有图像*/
+.dingwei{
+
+  position:absolute;
+  background:url(../img/down.png) no-repeat -300px -381px;
+  width:22px;
+  height:22px;
+  top:100px;
+  right:25px;
+    display:none;
+} 
+a:hover .dingwei{
+    display:block; 
+}
+
+
+.music .olist .musicpic{
+    position:relative;
+    height:120px;
+  
+}
+ .olist  .musicpic .ml .shadow{
+  position:absolute;
+  top:100px;
+  left:11px;
+  width:95px;
+  height:17px;
+background:url(../img/down.png) no-repeat -152px -383px;
+ }
+ .olist  .musicpic .ml{
+    float:left;
+   padding: 20px 0 20px 20px;
+}
+.olist  .musicpic .mr{
+      float:left;
+      margin:20px 0 0 10px;
+    
+}
+.mr h2{
+  width:90px;
+}
+
+.olist  .musicpic .mr a{
+  float:left;
+    font:bold 14px/28px "宋体";
+}
+.olist  .musicpic .mr a:hover{
+    font:bold 14px/28px "宋体";
+    text-decoration: underline;
+}
+.olist  .musicpic .mr .start{
+ /*display:inline-block;不兼容*/
+ float:left;
+ margin-right: 10px;
+ width:22px;
+ height:22px;
+
+  background:url(../img/down.png) no-repeat -282px -63px;
+}
+.olist  .musicpic .mr .wenjian{
+ /*display:inline-block; 不兼容*/
+  float:left;
+ width:22px;
+ height:22px;
+  background:url(../img/down.png) no-repeat -282px -97px;
+}
+.olist  .musicpic .mr .start:hover{
+ display:inline-block;
+ width:22px;
+ height:22px;
+  background:url(../img/down.png) no-repeat -311px -63px;
+}
+.olist  .musicpic .mr .wenjian:hover{
+ display:inline-block;
+ width:22px;
+ height:22px;
+  background:url(../img/down.png) no-repeat -311px -97px;
+}
+.box4 .listl .listl3 .music .olist{ 
+    float:left;
+    width:228px;
+    margin-left:-1px;
+    border:1px solid #c3c3c3;
+    vertical-align: top;/*=======li下的间隙问题：li本身没有浮动，但是li的内容有浮动，li下边就会出现多出来的像素。
+
+                                          解决：给li加浮动，或者加宽度
+                                                 给li加vertic-align：top==========*/
+}
+
+ .music .olist li a{
+      float:left;
+       font:12px/32px "宋体";
+       color:#000;
+} 
+
+ .music{
+    padding:20px;
+}
+ .qian{
+    background-color:#f4f4f4;
+}
+.shen{
+    background:#e8e8e8;
+}
+
+ .num{
+    float:left;
+    color:red;
+    width:25px;
+    text-align: center;
+    padding:7px 14px 0 15px;
+}
+ .num1{
+    float:left;
+    color:#6f6f6f;
+     width:25px;
+    text-align: center;
+    padding:7px 14px 0 15px;
+}
+.music .olist .all{
+    float:right;
+    margin-right:30px;  
+}
+.music .olist .all:hover{
+  text-decoration: underline;
+}
+.music .olist .gaodu{
+   height:32px;
+}
+
+ .music .olist li{
+    position:relative;
+ }
+.picture{
+float:right;
+position:absolute;
+top:6px;
+right:6px;
+display:none;
+}
+.picture a{
+    float:left;
+}
+.picture1{
+width:17px ;
+height:17px;
+background:url(../img/down.png) no-repeat -282px -131px;
+}
+.picture1:hover{
+    background:url(../img/down.png) no-repeat -282px -151px;
+}
+.picture2{
+ width:17px ;
+height:17px;
+background:url(../img/down.png) no-repeat -282px -207px;
+}
+.picture2:hover{
+    background:url(../img/down.png) no-repeat -282px -224px;
+}
+.picture3{
+width:17px ;
+height:17px;
+background:url(../img/down.png) no-repeat -282px -170px;
+}
+.picture3:hover{
+    background:url(../img/down.png) no-repeat -282px -190px;
+}
+.music .olist li:hover .picture{
+    display:block; 
+}
+
+.listr {
+  float:left;
+  width:250px;
+  font:12px "宋体";
+}
+
+.denglu{
+  background:url(../img/input.gif) repeat-x 0 -220px;
+  height:126px;
+  overflow:hidden;
+}
+.denglu p{
+  line-height: 22px;
+  color:#666666;
+  padding:16px 22px;
+}
+.denglu a{
+  width:100px;
+  line-height: 90px;
+  height:0;
+   overflow:hidden;
+  margin-left: 75px;
+  display:inline-block;
+  padding:31px;
+ 
+  background:url(../img/down.png) no-repeat -76px -123px;
+
+}
+.denglu a:hover{
+   background:url(../img/down.png) no-repeat -76px -192px;
+   zoom:1;
+}
+
+.listr .singer{
+  margin:0 20px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom:15px;
+}
+.listr header{
+  font:12px/32px "宋体";
+  border-bottom: 1px solid #cccccc;
+  margin:6px 0px;
+  height:39px;
+}
+.listr  header h3{
+float:left;
+font-size: 12px;
+}
+.listr  header a{
+float:right;
+color:#666;
+}
+.listr  header a:hover{
+  text-decoration: underline;
+  zoom:1;
+}
+.listr .ssong{
+  margin:6px 0px 14px 0;
+
+}
+
+.ssong .singsong{
+  width:210px;
+  margin-top:14px;
+   height:62px;
+   vertical-align: top;/* =============li的内容有浮动，但是li本身没有浮动，li下面有几px的间隙================*/
+}
+.ssong .singsongl{
+  float:left;
+} 
+.ssong .singsongr{
+  float:left;
+  width:133px;
+  display:inline;/* =====注意双边距问题====*/
+  border:1px solid #e9e9e9;
+  border-left:none;
+  padding-left: 14px;
+  background:#fafafa;
+} 
+
+.ssong a:hover{
+  background:#f4f4f4;
+}
+.ssong .singsongr .span1{
+  font: bold 14px/32px "宋体";
+  color:#333333;
+}
+.ssong .singsongr .span2{
+  display:block;
+  font:12px/20px "宋体";
+  padding-bottom:8px;
+  color:#666;
+}
+.singer .shenqing a{
+  /*float:left;*/
+  font:bold 12px/28px "宋体";
+  border:1px solid #c4c4c4;
+  background:url(../img/input.gif) repeat-x  0px -180px;
+  /*margin:14px 0 0;*/
+  text-align:center;
+  padding:7px 45px;
+   color:#333333;
+}
+
+.singer .shenqing a:hover{
+   background:#fff;;
+}
+
+
+.listr .hot{
+  margin:0 20px;
+}
+
+.hot .dj{
+  font:12px/20px "宋体";
+  margin-top: 10px;
+  height:40px;
+  vertical-align: top;
+}
+
+.hot .dj .djl{
+  float:left;
+}
+.hot .dj .djr{
+  float:left;
+  padding-left:10px;
+}
+.hot .dj .djr a{
+  color:#000;
+  padding-right:14px;
+  /*font-weight: bold;*/
+  background:url(../img/down.png) no-repeat right -182px;
+}
+.hot .dj .djr a:hover{
+ text-decoration: underline;
+ zoom:1;
+}
+.hot .dj .djr p{
+   color:#666666;
+}
+.listr .hot .te{
+  margin-top: 10px;
+}
+
+
+/*===============================================footer*/
+.box5{
+ border-top:1px solid #d5d5d5;
+}
+.box5 .center{
+    width:982px;
+    height:124px;
+    margin:0 auto;
+    font:12px/22px "宋体";
+    padding:32px 0 0;
+}
+.box5 .center a{
+  color:#999;
+}
+.box5 .center .color{
+  color:#666;
+}
+.cen1{
+  float:left;
+  width:302px;
+  margin-left:5px;
+}
+.cen1l{
+  float:left;
+}
+.cen1r{
+  float:left;
+  padding-left:12px;
+}
+.cen2{
+  float:left;
+   width:293px;
+    margin-left:5px;
+}
+.cen2l{
+  float:left;
+}
+.cen2r{
+  float:left;
+  padding-left:12px;
+}
+.cen3{
+  float:left;
+   margin-left:5px;
+}
+.cen3 .l{
+  float:left;
+}
+.cen3 .r{
+  float:right;
+  padding-left:22px;
+  background:url(../img/down.png) no-repeat -79px -84px;
+}
+.footer1{
+  float:left;
+  width:37px;
+  height: 37px;
+  background:url(../img/down.png) no-repeat 0 -84px;
+}
+.footer2{
+  float:left;
+  width:34px;
+  height: 37px;
+  background:url(../img/down.png) no-repeat -39px -84px;
+}
